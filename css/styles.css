@@ -17,46 +17,92 @@ body {
   overflow: clip;
 }
 .button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 30px;
+  background-color: #3d96f4;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43; /* 22/14 */
+  letter-spacing: 2px;
+  color: #ffffff;
+  transition: background-color 0.3s ease 0s;
+}
+.button:hover {
+  background-color: #57a0ee;
 }
 
 /* хедер */
 .header {
-  &__container {
-  }
-
-  &__logo {
-  }
-
-  &__menu {
-  }
-
-  &__cart {
-  }
-
-  &__button {
-  }
+}
+.header__container {
+  display: flex;
+  column-gap: 35px;
+  align-items: center;
+  min-height: 116px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header__logo {
+}
+.header__menu {
+  flex: 1 1 auto;
 }
 .menu {
-  &__icon {
-  }
-
-  &__list {
-  }
-
-  &__item {
-  }
-
-  &__link {
-  }
 }
-.icon-menu {
+.menu__icon {
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3px;
+  justify-content: flex-end;
+  column-gap: 35px;
+}
+.menu__item {
+}
+.menu__link {
+  line-height: 1.62; /* 26/16 */
+  color: #ffffff;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+.header__cart {
 }
 .cart-header {
-  &__text {
-  }
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart-header:hover .cart-header__text {
+  text-decoration: underline;
+}
+.cart-header__text {
+  font-size: 18px;
+  line-height: 1.55; /* 28/18 */
+}
+.cart-header__quantity {
+  background: rgba(129, 129, 139, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
 
-  &__quantity {
-  }
+  letter-spacing: 0.96px;
+}
+.header__button {
+}
+.icon-menu {
+  display: none;
 }
 
 /* мейн */
