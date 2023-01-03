@@ -16,8 +16,48 @@ body {
   flex-direction: column;
   overflow: clip;
 }
+.button {
+}
 
 /* хедер */
+.header {
+  &__container {
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+  }
+
+  &__cart {
+  }
+
+  &__button {
+  }
+}
+.menu {
+  &__icon {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+.icon-menu {
+}
+.cart-header {
+  &__text {
+  }
+
+  &__quantity {
+  }
+}
 
 /* мейн */
 .page {
