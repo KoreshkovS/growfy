@@ -1,0 +1,26 @@
+/* загальні правила */
+body {
+  background-color: #0d0d11;
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #9c9c9c;
+}
+[class*="__container"] {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+
+/* хедер */
+
+/* мейн */
+.page {
+  flex: 1 1 auto;
+}
+/* футер */
