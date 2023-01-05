@@ -29,10 +29,17 @@ body {
   color: #ffffff;
   transition: background-color 0.3s ease 0s;
 }
+.button_dark {
+  background-color: rgba(129, 129, 139, 0.2);
+}
 .button:hover {
   background-color: #57a0ee;
 }
-
+.button_dark:hover {
+  background-color: rgba(129, 129, 139, 1);
+}
+.page__main {
+}
 /* хедер */
 .header {
   position: fixed;
@@ -127,6 +134,43 @@ body {
 .page {
   flex: 1 1 auto;
 }
+/* 1 block */
+.main {
+  padding-top: 160px;
+}
+.main__container {
+  display: flex;
+  gap: 32px;
+}
+.main__content {
+  flex: 0 1 50%;
+}
+.main__title {
+}
+.main__text {
+}
+.main__actions {
+}
+.main__button {
+}
+
+.main__images {
+  flex: 0 1 50%;
+}
+.images-main {
+  display: flex;
+  justify-content: center;
+}
+.images-main__column {
+  flex: 0 1 50%;
+}
+.images-main__item {
+}
+.images-main__item img {
+  max-width: 242px;
+}
+/* 2 block */
+
 /* футер */
 
 /* адаптив */
@@ -140,6 +184,9 @@ body {
   }
   .header__container {
     min-height: 90px;
+  }
+  .main {
+    padding-top: 120px;
   }
 }
 @media (max-width: 767.98px) {
@@ -218,6 +265,9 @@ body {
   }
   .header__container {
     min-height: 70px;
+  }
+  .main {
+    padding-top: 100px;
   }
 }
 @media (max-width: 560px) {
