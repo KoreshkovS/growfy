@@ -130,12 +130,14 @@ body {
 .menu-open .menu__body::before {
   left: 0;
 }
+.page__clients {
+}
 
 /* мейн */
 .page {
   flex: 1 1 auto;
 }
-/* 1 block */
+/* hero block */
 .main {
   padding-top: 160px;
   padding-bottom: 100px;
@@ -224,11 +226,37 @@ body {
 .images-main__item img {
   max-width: 100%;
 }
-/* 2 block */
+/* clients block */
 
+.clients {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.clients__container {
+}
+.clients__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.57; /* 22/14 */
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 44px;
+}
+.clients__items {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.clients-item img {
+  max-width: 100%;
+}
 /* футер */
 
 /* адаптив */
+
+/* 992 */
 @media (max-width: 991.98px) {
   .header__container,
   .menu__list {
@@ -248,6 +276,7 @@ body {
     font-size: 44px;
   }
 }
+/* 768 */
 @media (max-width: 767.98px) {
   .header__container,
   .menu__list {
@@ -338,7 +367,14 @@ body {
   .header-main__title {
     font-size: 32px;
   }
+  .header-main__title:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .header-main__text:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
+/* 560 */
 @media (max-width: 559.98px) {
   .header__logo {
     width: 40px;
@@ -356,6 +392,7 @@ body {
     background: url(../img/cart.png) center / 30px no-repeat;
   }
 }
+/* 480 */
 @media (max-width: 479.98px) {
   .header-main__actions {
     flex-direction: column;
