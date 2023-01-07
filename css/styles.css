@@ -40,6 +40,8 @@ body {
 }
 .page__main {
 }
+.page__services {
+}
 /* хедер */
 .header {
   position: fixed;
@@ -152,6 +154,23 @@ body {
 }
 .header-main {
 }
+.header-main__lable {
+  display: inline-block;
+  border: 1px solid rgba(129, 129, 139, 0.2);
+  border-radius: 12px;
+  font-size: 10px;
+  line-height: 1.7; /* 17/10 */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 11px 19px;
+  transition: border 0.5s ease 0s;
+}
+.header-main__lable:hover {
+  border: 1px solid rgba(129, 129, 139, 0.4);
+}
+.header-main__lable:not(:last-child) {
+  margin-bottom: 19px;
+}
 .header-main__title {
   font-weight: 500;
   font-size: 51px;
@@ -255,6 +274,38 @@ body {
 
 /* services block */
 
+.services {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.services__container {
+  display: flex;
+  gap: 32px;
+}
+.services__content {
+  flex: 0 1 50%;
+  align-self: center;
+}
+.services__header {
+}
+.services__items {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.services__column {
+}
+.services__item {
+}
+.item-service {
+}
+.item-service__icon {
+}
+.item-service__title {
+}
+.item-service__text {
+}
 
 /* футер */
 
@@ -285,6 +336,10 @@ body {
   }
   .clients__title {
     margin-bottom: 30px;
+  }
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 /* 768 */
@@ -390,6 +445,10 @@ body {
   }
   .clients__title {
     margin-bottom: 20px;
+  }
+  .services {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 /* 560 */
